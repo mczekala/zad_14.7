@@ -1,0 +1,320 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  background-color: #D7D2D4;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contactItem {
+  background-color: #fff;
+  border: 1px solid #D7D2D4;
+  display: flex;
+  height: 140px;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.contactItem:hover {
+  background-color: #A095AF;
+  color: #fff;
+}
+
+.contactItem:hover a {
+  color: #fff;
+}
+
+.contactLabel,
+.contactEmail {
+  align-items: center;
+  display: flex;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.contactsList {
+  border: 10px solid #000;
+  border-radius: 10px;
+}*/
