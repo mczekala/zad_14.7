@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "babel script.js --watch --out-file scriptc.js",
+    "start": "babel ./components/ContactForm.jsx --out-file ./components/ContactFormc.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
