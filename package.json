@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "babel ./components/ContactForm.jsx --out-file ./components/ContactFormc.js",
+    "start": "babel ./components/Contacts.jsx --out-file ./components/Contactsc.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
