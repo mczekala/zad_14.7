@@ -4,7 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "babel ./components/Contacts.jsx --out-file ./components/Contactsc.js",
+    "convert-components": "babel components --out-file componentsc.js",
+    "convert-script": "babel script.js --out-file scriptc.js",
+    "convert": "npm run-script convert-components && npm run-script convert-script",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +18,7 @@
   "dependencies": {
     "babel-preset-react": "^6.24.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "uuid4": "^1.0.0"
   }
 }
