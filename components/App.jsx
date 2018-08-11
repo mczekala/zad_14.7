@@ -21,29 +21,21 @@ class App extends React.Component {
           lastName: "Koziol",
           email: "zbigniew.koziol@example.com"
         }
-      ],
-      contactForm: {
-        firstName: "",
-        lastName: "",
-        email: ""
-      }
+      ]
     };
     this.createContact = this.createContact.bind(this);
   }
   createContact(obj) {
     obj.id = obj.firstName + obj.lastName + obj.email;
-    console.log(obj);
-    let contacts = this.state.contacts;
-    contacts.push(obj);
-    this.setState({ contacts });
+    // console.log(obj);
+    // let contacts = this.state.contacts;
+    // contacts.push(obj);
+    this.setState({ contacts: [...this.state.contacts, obj] });
   }
   render() {
     return (
       <div className="app">
-        <ContactForm
-          createContact={this.createContact}
-          contact={this.state.contactForm}
-        />
+        <ContactForm createContact={this.createContact} />
         <Contacts items={this.state.contacts} />
       </div>
     );

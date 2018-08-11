@@ -2,6 +2,8 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -32,12 +34,7 @@ var App = function (_React$Component) {
         firstName: "Zbigniew",
         lastName: "Koziol",
         email: "zbigniew.koziol@example.com"
-      }],
-      contactForm: {
-        firstName: "",
-        lastName: "",
-        email: ""
-      }
+      }]
     };
     _this.createContact = _this.createContact.bind(_this);
     return _this;
@@ -47,10 +44,10 @@ var App = function (_React$Component) {
     key: "createContact",
     value: function createContact(obj) {
       obj.id = obj.firstName + obj.lastName + obj.email;
-      console.log(obj);
-      var contacts = this.state.contacts;
-      contacts.push(obj);
-      this.setState({ contacts: contacts });
+      // console.log(obj);
+      // let contacts = this.state.contacts;
+      // contacts.push(obj);
+      this.setState({ contacts: [].concat(_toConsumableArray(this.state.contacts), [obj]) });
     }
   }, {
     key: "render",
@@ -58,10 +55,7 @@ var App = function (_React$Component) {
       return React.createElement(
         "div",
         { className: "app" },
-        React.createElement(ContactForm, {
-          createContact: this.createContact,
-          contact: this.state.contactForm
-        }),
+        React.createElement(ContactForm, { createContact: this.createContact }),
         React.createElement(Contacts, { items: this.state.contacts })
       );
     }
